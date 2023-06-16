@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #4d4d4d;
+    transition: .3s;
+}
+
+svg {
+    margin: 8px;
+    fill: #0d0cb5;
+    transition: .3s;
+}
+
+a:hover,
+svg:hover {
+    color: #08076d;
+    fill: #08076d;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+section {
+    display: block;
+}
+
+#header-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8px 0px;
+    border-bottom: 1px;
+    border: 1px solid #e9ecef;
+}
+
+#header-1 a {
+    color: #0d0cb5;
+}
+
+#header-1 div span {
+    margin-left: 8px;
+    font-weight: 600;
+}
+
+#header-1 div span a {
+    font-weight: 100;
+}
+
+#header-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 24px 80px 24px 100px;
+}
+
+#header-2 h1 a {
+    color: black;
+}
+
+#header-2 ul li {
+    padding: 5px 20px;
+    color: #4d4d4d;
+}
+
+#Services-menu {
+    position: relative;
+}
+
+#Services-menu:hover #Services-submenu {
+    opacity: 1;
+    z-index: 99;
+}
+
+#Services-menu ul li {
+    width: 200px;
+    height: 45px;
+    padding: 0px;
+}
+
+#Services-menu svg {
+    position: absolute;
+    fill: #4d4d4d;
+    margin: 0 0 0 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#Services-submenu {
+    position: absolute;
+    display: block;
+    z-index: -99;
+    opacity: 0;
+    background-color: white;
+    box-shadow: 0px 14px 24px -4px rgba(0, 0, 0, 0.1);
+    border-top: 2.2px solid #0d0cb5;
+    left: 0px;
+    top: 30px;
+    transition: .2s;
+}
+
+#Services-submenu li a {
+    display: inline-block;
+    padding: 9px 20px;
+    width: 200px;
+    height: 45px;
+    align-items: center;
+}
+
+#pagina a {
+    color: #0d0cb5;
+}
+
+#banner {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 950px;
+    color: white;
+}
+
+#banner div {
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1140px;
+    height: 215px;
+}
+
+#banner div h1 {
+    margin-bottom: 8px;
+    font-size: 48px;
+    font-weight: 500;
+}
+
+#banner div p {
+    margin-bottom: 48px;
+    opacity: 40%;
+    font-size: 18px;
+    font-weight: 50;
+}
+
+#banner div a {
+    font-size: 12px;
+    text-transform: uppercase;
+    background-color: #0d0cb5;
+    color: white;
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+
+#banner img {
+    position: absolute;
+    z-index: -1;
+    filter: brightness(60%);
+    overflow: hidden;
+}
+
+#About {
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 1140px;
+    height: 590px;
+    padding: 30px;
+    left: 50%;
+    transform: translate(-50%);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#Image-about div button span svg {
+    fill: white;
+}
+
+#Image-about div button {
+    background-color: #0d0cb5;
+    border: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 24px;
+}
+
+#Image-about div {
+    display: flex;
+    margin-bottom: 48px;
+}
+
+#Image-about div h2 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+#Properties-1 {
+    margin-left: 92.5px;
+    padding: 0 15px 0 15px;
+    height: 400px;
+}
+
+#Properties-2 {
+    padding: 0 15px 0 15px;
+    height: 400px;
+}
+
+#Properties-1 div {
+    width: 255px;
+}
+
+#Properties-1 div span svg,
+#Properties-2 div span svg {
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    fill: white;
+}
+
+#Properties-1 div h3,
+#Properties-2 div h3 {
+    margin-bottom: 9px;
+    font-weight: 500;
+}
+
+#Properties-1 div h3 span,
+#Properties-2 div h3 span {
+    vertical-align: middle;
+}
+
+#Properties-1 div p,
+#Properties-2 div p {
+    margin-bottom: 16px;
+}
+
+#About {
+    align-items: center;
+}
+
+#Objectives {
+    position: absolute;
+    top: 1900px;
+}
+
+#Objectives div {
+    display: flex;
+    padding: 16px 31px 16px 31px;
+}
+
+#Objectives div div {
+    display: block;
+}
+
+#Objectives div div p {
+    width: 325px;
+    text-align: justify;
+}
+
+.container {
+    display: grid;
+}
+
+.Properties-text {
+    font-size: 16px;
+    color: #737373;
+    line-height: 1.7;
+}
+
+.Read-More a {
+    color: white;
+    text-decoration: underline;
+}
+
+.Read-More a:hover {
+    text-decoration: none;
+}
+
+.First-div {
+    margin-bottom: 48px;
+}
