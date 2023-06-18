@@ -278,7 +278,7 @@ section {
 #Objectives div {
     display: flex;
     justify-content: center;
-    padding: 16px 31px 16px 31px;
+    padding: 16px 31px;
 }
 
 #Objectives div div {
@@ -287,8 +287,109 @@ section {
 }
 
 #Objectives div div p {
-    width: 325px;
+    width: 310px;
+    color: #4d4d4d;
+    font-weight: 400;
     text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+#Objectives div div h2 {
+    color: #4d4d4d;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 2em;
+}
+
+#Start-Section {
+    text-align: center;
+}
+
+#Start-Section div h2 {
+    position: relative;
+    font-size: 4em;
+    font-weight: 500;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+#Start-Section div h2::after {
+    transform: translateX(-50%);
+    content: "";
+    left: 50%;
+    bottom: 0;
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background: #0d0cb5;
+}
+
+#Start-Section div p {
+    color: #4d4d4d;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    font-size: 1.25em;
+    word-spacing: 2px;
+}
+
+#Feature-Projects .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "a b c"
+        "d d d";
+    justify-items: center;
+}
+
+#Feature-Projects .container div {
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+#Feature-Projects .container div a img {
+    transition: .3s;
+}
+
+#Feature-Projects .container div a:hover img {
+    filter: brightness(20%);
+    transform: scale(1.05);
+}
+
+#Feature-Projects .container div a:hover .Describes {
+    opacity: 1;
+}
+
+#Feature-Projects .container div a div {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+#Feature-Projects .container div a div {
+    height: 75px;
+}
+
+#Work-link {
+    margin-top: 48px;
+    width: 100%;
+    text-align: center;
+}
+
+#Work-Link a {
+    position: absolute;
+    background-color: #0d0cb5;
+    width: 180px;
+    height: 50px;
+    padding: 15px 30px;
+    border-radius: 90px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
 }
 
 .container {
@@ -315,10 +416,13 @@ section {
 }
 
 .Behind-Text {
-    position: absolute;
+    position: relative;
     font-size: 8rem;
-    z-index: -1;
+    z-index: -99;
     font-weight: 900;
+    top: 45px;
+    left: -90px;
+    height: 0px;
     color: #f2f4f5;
 }
 
@@ -327,4 +431,23 @@ section {
     width: 100%;
     height: 600px;
     margin-bottom: 48px;
+}
+
+.Describes {
+    height: 75px;
+    font-size: 1.5em;
+    color: white;
+    opacity: 0;
+}
+
+.Describes h2 {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.Describes span {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    color: #999;
 }
