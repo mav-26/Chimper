@@ -48,6 +48,14 @@ section {
     display: block;
 }
 
+#Feature-Projects,
+#Objectives,
+#Testimonials,
+#Blog {
+    padding: 80px 0;
+    display: block;
+}
+
 #header-1 {
     display: flex;
     justify-content: space-evenly;
@@ -269,12 +277,6 @@ section {
     margin-bottom: 16px;
 }
 
-#Objectives {
-    position: relative;
-    display: block;
-    padding: 80px 0;
-}
-
 #Objectives div {
     display: flex;
     justify-content: center;
@@ -300,11 +302,6 @@ section {
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 2em;
-}
-
-
-#Feature-Projects {
-    padding: 80px 0;
 }
 
 #Start-Section {
@@ -401,6 +398,11 @@ section {
     font-size: 13px;
 }
 
+#Testimonials {
+    display: block;
+    height: 600px;
+}
+
 #Testimonials h2 {
     position: relative;
     font-size: 4em;
@@ -419,6 +421,112 @@ section {
     width: 100px;
     height: 3px;
     background: #0d0cb5;
+}
+
+#Testimonials div {
+    position: relative;
+    width: 800px;
+    height: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#Testimonials div p {
+    text-align: center;
+    font-size: 24px;
+    color: #4d4d4d;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 3em;
+    line-height: 1.7;
+}
+
+#Testimonials .Mini-Profile p {
+    font-size: 16px;
+    margin: 16px 0 16px 0;
+    height: 30px;
+}
+
+#Testimonials .Mini-Profile {
+    width: auto;
+    height: 75px;
+}
+
+#Blog {
+    display: block;
+    position: relative;
+    background-color: #f8f9fa;
+    height: 780px;
+}
+
+#Title-Blog {
+    position: relative;
+    font-size: 4em;
+    font-weight: 500;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#Title-Blog::after {
+    transform: translateX(-50%);
+    content: "";
+    left: 50%;
+    bottom: 0;
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background: #0d0cb5;
+}
+
+#Blog .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 60%;
+    justify-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#Blog .container img {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#Blog .container h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+#Blog .container div div {
+    position: relative;
+    display: flex;
+    color: #b3b3b3;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+#Blog .container a {
+    color: #0d0cb5;
+    font-weight: 500;
+}
+
+#Blog .container div div a {
+    position: absolute;
+    font-size: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#Blog .container div div span {
+    margin: 0 8px;
+}
+
+#Blog .container div p {
+    color: #4d4d4d;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    font-weight: 500;
 }
 
 .container {
@@ -479,4 +587,16 @@ section {
     text-transform: uppercase;
     letter-spacing: 2.1px;
     color: #999;
+}
+
+.Mini-Profile {
+    display: flex;
+    justify-content: center;
+}
+
+.Mini-Profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 25px 16px;
 }
