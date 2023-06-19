@@ -48,6 +48,61 @@ section {
     display: block;
 }
 
+footer {
+    position: relative;
+    padding: 8em 0;
+    background-color: #333;
+}
+
+footer .container {
+    grid-template-areas: "a b c d";
+    justify-content: space-around;
+    width: 1140px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+footer h2 {
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 24px;
+}
+
+footer p {
+    color: #737373;
+    line-height: 1.7;
+}
+
+footer ul {
+    display: block;
+}
+
+footer ul li {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    color: #999999;
+    transition: .2s;
+}
+
+footer ul li a:hover {
+    color: white;
+}
+
+footer svg {
+    fill: #999999;
+    margin: 0;
+    margin-right: 16px;
+    transition: .2s;
+}
+
+footer svg:hover {
+    fill: white;
+}
+
 #Feature-Projects,
 #Objectives,
 #Testimonials,
@@ -151,8 +206,13 @@ section {
     position: relative;
     display: block;
     width: 100%;
-    height: 950px;
+    height: 970px;
     color: white;
+    margin-bottom: 500px;
+    background-image: url(/Assets/imagens/hero_1.jpg.webp);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
 }
 
 #banner div {
@@ -190,7 +250,7 @@ section {
 
 #banner img {
     position: absolute;
-    z-index: -1;
+    z-index: -99;
     filter: brightness(60%);
     overflow: hidden;
 }
@@ -203,8 +263,9 @@ section {
     height: 590px;
     padding: 30px;
     margin: 30px;
+    top: 85%;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%, 20%);
     display: block;
 }
 
@@ -456,7 +517,7 @@ section {
     display: block;
     position: relative;
     background-color: #f8f9fa;
-    height: 780px;
+    height: 850px;
 }
 
 #Title-Blog {
@@ -529,6 +590,45 @@ section {
     font-weight: 500;
 }
 
+#Get-Started {
+    position: relative;
+    height: 150px;
+    display: block;
+    background-color: #0d0cb5;
+}
+
+#Get-Started a {
+    height: 150px;
+    width: 100%;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+#Get-Started a div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Made {
+    width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3em;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+#Made p a {
+    color: #bfbfbf;
+    transition: .3s;
+}
+
+#Made p a:hover {
+    color: white;
+}
+
 .container {
     display: grid;
 }
@@ -561,13 +661,6 @@ section {
     left: -90px;
     height: 0px;
     color: #f2f4f5;
-}
-
-.void-space {
-    display: block;
-    width: 100%;
-    height: 600px;
-    margin-bottom: 48px;
 }
 
 .Describes {
