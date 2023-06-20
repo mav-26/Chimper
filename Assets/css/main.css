@@ -248,13 +248,6 @@ footer svg:hover {
     padding: 15px 30px;
 }
 
-#banner img {
-    position: absolute;
-    z-index: -99;
-    filter: brightness(60%);
-    overflow: hidden;
-}
-
 #About {
     position: absolute;
     background-color: black;
