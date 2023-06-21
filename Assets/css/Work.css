@@ -231,6 +231,10 @@ footer svg:hover {
     color: #25262a;
 }
 
+#pagina a {
+    color: #0d0cb5;
+}
+
 #banner {
     position: relative;
     display: block;
